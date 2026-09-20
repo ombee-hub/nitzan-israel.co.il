@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>אגודת ניצן ישראל — איתכם מילדות ועד בגרות</title>
+<link rel="icon" href="images/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <button class="burger" aria-label="פתיחת תפריט" onclick="document.body.classList.add('drawer-open')">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a class="logo" href="index.html">
+      <img src="images/logo-blue.svg" alt="ניצן — אגודה לקידום ילדים ובוגרים עם לקויות למידה">
+    </a>
+    <nav class="nav" aria-label="ניווט ראשי">
+      <a href="about.html">אודות</a>
+      <a href="diagnostics.html">אבחונים</a>
+      <a href="therapy.html">למידה וטיפול</a>
+      <a href="parents.html">הורים ומשפחה</a>
+      <a href="housing.html">שיקום ודיור</a>
+      <a href="branches.html">סניפים</a>
+      <a href="contact.html">יצירת קשר</a>
+    </nav>
+    <div class="topbar-actions">
+      <a class="phone" href="tel:*2391" dir="ltr">2391*</a>
+      <a class="btn btn-accent" href="donate.html">אני רוצה לתרום</a>
+    </div>
+  </div>
+</header>
+
+<div class="drawer-overlay" onclick="document.body.classList.remove('drawer-open')"></div>
+<aside class="drawer" aria-label="תפריט ראשי">
+  <div class="drawer-head">
+    <a href="index.html" aria-label="לדף הראשי"><img src="images/logo-blue.svg" alt="ניצן"></a>
+    <button class="drawer-close" aria-label="סגירת תפריט" onclick="document.body.classList.remove('drawer-open')">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+  </div>
+  <nav class="drawer-nav">
+    <a href="about.html">אודות</a>
+    <a href="diagnostics.html">אבחונים</a>
+    <a href="therapy.html">למידה וטיפול</a>
+    <a href="parents.html">הורים ומשפחה</a>
+    <a href="housing.html">שיקום ודיור</a>
+    <a href="branches.html">סניפים</a>
+    <a href="contact.html">יצירת קשר</a>
+  </nav>
+  <div class="drawer-cta">
+    <a class="btn btn-ghost" href="tel:*2391">חיוג חינם <span dir="ltr">2391*</span></a>
+    <a class="btn btn-accent" href="donate.html">אני רוצה לתרום</a>
+  </div>
+</aside>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">מאז 1964 · הארגון המוביל בישראל ללקויות למידה ו־ADHD</span>
+      <h1>כל ילד הוא ניצן.<br>אנחנו איתכם <em>עד שהוא פורח</em>.</h1>
+      <p class="lead">אבחון, טיפול וליווי לילדים ולבוגרים עם לקויות למידה והפרעות קשב — מהגן ועד העבודה הראשונה. יותר מ־60 שנות ניסיון, פרוסים בכל הארץ.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-accent" href="contact.html">פגישת ייעוץ חינם בזום</a>
+        <a class="btn btn-ghost" href="branches.html">מצאו סניף קרוב</a>
+      </div>
+      <div class="hero-trust">
+        <div><b>60+</b>שנות ניסיון</div>
+        <div><b>29</b>סניפים בפריסה ארצית</div>
+        <div><b>1M+</b>ילדים ובוגרים לאורך השנים</div>
+      </div>
+    </div>
+    <div class="sprout-stage" aria-hidden="true">
+      <svg viewBox="0 0 340 360" fill="none">
+        <ellipse cx="170" cy="330" rx="120" ry="16" fill="var(--brand)" opacity="0.12"/>
+        <path class="stem-path" d="M170 330 C170 280 160 240 170 190 C180 150 170 120 170 90" stroke="var(--brand)" stroke-width="7" stroke-linecap="round"/>
+        <path class="leaf leaf-1" d="M170 250 C130 245 105 218 103 180 C143 185 168 212 170 250Z" fill="var(--bud)"/>
+        <path class="leaf leaf-2" d="M170 200 C210 195 235 168 237 130 C197 135 172 162 170 200Z" fill="var(--brand)" opacity="0.85"/>
+        <path class="leaf leaf-3" d="M170 150 C138 146 118 124 116 94 C148 98 168 120 170 150Z" fill="var(--bud)" opacity="0.75"/>
+        <g class="bud-circle">
+          <circle cx="170" cy="72" r="26" fill="var(--accent)"/>
+          <circle cx="170" cy="72" r="13" fill="var(--bg)"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">המסע שלנו יחד</span>
+      <h2>מילדות ועד בגרות — ליווי בכל שלב בחיים</h2>
+      <p>לקות למידה לא נעלמת בסוף שנת הלימודים. לכן ניצן בנויה כדרך שלמה, לא כטיפול נקודתי.</p>
+    </div>
+    <div class="journey-track">
+      <div class="stage">
+        <span class="age">גיל הרך</span>
+        <h3>זיהוי מוקדם</h3>
+        <p>אבחון מוכנות לכיתה א׳ וזיהוי סימנים ראשונים — ככל שמקדימים, ההצלחה גדולה יותר.</p>
+      </div>
+      <div class="stage">
+        <span class="age">בית הספר</span>
+        <h3>אבחון ולמידה</h3>
+        <p>אבחונים דידקטיים ופסיכו־דידקטיים, הוראה מתקנת ואסטרטגיות למידה מותאמות אישית.</p>
+      </div>
+      <div class="stage">
+        <span class="age">תיכון וצבא</span>
+        <h3>עצמאות והתאמות</h3>
+        <p>ליווי לבגרויות, מיצוי זכויות והתאמות, והכנה לשירות ולהשכלה גבוהה.</p>
+      </div>
+      <div class="stage">
+        <span class="age">בוגרים</span>
+        <h3>חיים ופריחה</h3>
+        <p><a href="housing.html" style="color:inherit; text-decoration:underline; text-decoration-color:var(--line);">מסגרות דיור, תעסוקה וקהילה לבוגרים</a> — כי הליווי לא נגמר בתעודה.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section pad-bottom">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">מה תמצאו אצלנו</span>
+      <h2>שלושה עוגנים, מטרה אחת</h2>
+      <p>כל השירותים ניתנים על ידי אנשי מקצוע מוסמכים, בסניפי ניצן ברחבי הארץ ובאונליין.</p>
+    </div>
+    <div class="cards">
+      <div class="card lift">
+        <div class="icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </div>
+        <h3>אבחונים</h3>
+        <p class="sub">להבין בדיוק מה קורה — ומה עושים עכשיו.</p>
+        <ul>
+          <li>אבחון דידקטי</li>
+          <li>אבחון פסיכולוגי</li>
+          <li>אבחון פסיכו־דידקטי</li>
+          <li>מבדק MOXO לקשב וריכוז</li>
+          <li>אבחון מוכנות לכיתה א׳</li>
+        </ul>
+        <a class="more" href="diagnostics.html">לכל האבחונים</a>
+      </div>
+      <div class="card lift">
+        <div class="icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <h3>למידה וטיפול</h3>
+        <p class="sub">כלים שעובדים, בקצב של הילד.</p>
+        <ul>
+          <li>הוראה מתקנת ומותאמת</li>
+          <li>הקניית אסטרטגיות למידה</li>
+          <li>טיפולים ותרפיות רגשיות</li>
+          <li>מרכזי מומחים רב־תחומיים</li>
+        </ul>
+        <a class="more" href="therapy.html">לתחומי הטיפול</a>
+      </div>
+      <div class="card lift">
+        <div class="icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>הורים ומשפחה</h3>
+        <p class="sub">כי גם אתם צריכים מישהו לצידכם.</p>
+        <ul>
+          <li>אימון הורים אישי</li>
+          <li>פגישות ייעוץ חינם בזום</li>
+          <li>מאמרים ומדריכים להורים</li>
+          <li>קהילה וקבוצות תמיכה</li>
+        </ul>
+        <a class="more" href="parents.html">למרחב ההורים</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section pad-bottom">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">לא רק לילדים</span>
+      <h2>שירותים לבוגרים ולאנשי מקצוע</h2>
+    </div>
+    <div class="cards cols-2">
+      <div class="card">
+        <div class="thumb"><img src="images/nitzan-band.jpg" alt="פעילות מועדון של בוגרי ניצן"></div>
+        <h3>מערכי דיור ומועדונים לבוגרים</h3>
+        <p class="body">מסגרות דיור, תעסוקה נתמכת ומועדונים חברתיים לבוגרים עם לקויות למידה — חיים עצמאיים, קהילה תומכת ופנאי איכותי.</p>
+        <a class="more" href="housing.html">לשיקום ודיור</a>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="images/webinar.jpg" alt="הכשרה מקצועית במרכז ההדרכה של ניצן"></div>
+        <h3>מרכז הדרכה למקצוענים ולבתי ספר</h3>
+        <p class="body">קורסים, השתלמויות ותוכניות לבתי ספר — הידע של 60 שנות טיפול, זמין למורים, למאבחנים ולמטפלים בכל הארץ.</p>
+        <a class="more" href="contact.html">לקטלוג ההכשרות</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><b>60+</b><span>שנות ניסיון וידע</span></div>
+    <div class="stat"><b>29</b><span>סניפים מהצפון ועד הדרום</span></div>
+    <div class="stat"><b>1,000+</b><span>אנשי ונשות מקצוע</span></div>
+    <div class="stat"><b>1M+</b><span>ילדים ובוגרים שליווינו</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">למה דווקא ניצן</span>
+      <h2>מה שהופך אותנו לכתובת הראשונה</h2>
+    </div>
+    <div class="why">
+      <div class="why-item">
+        <img src="images/icon-experience.svg" alt="">
+        <h3>ניסיון ומומחיות</h3>
+        <p>יותר מ־60 שנות ידע מצטבר ואלפי אנשי מקצוע מוסמכים.</p>
+      </div>
+      <div class="why-item">
+        <img src="images/icon-services.svg" alt="">
+        <h3>מגוון שירותים מקיף</h3>
+        <p>אבחון, טיפול, למידה והורים — הכל תחת קורת גג אחת.</p>
+      </div>
+      <div class="why-item">
+        <img src="images/icon-lifecycle.svg" alt="">
+        <h3>ליווי לאורך מעגל החיים</h3>
+        <p>מהגן, דרך הצבא והאקדמיה, ועד תעסוקה ודיור לבוגרים.</p>
+      </div>
+      <div class="why-item">
+        <img src="images/icon-parent-support.svg" alt="">
+        <h3>תמיכה וייעוץ להורים</h3>
+        <p>אימון, קבוצות וייעוץ חינם — כי ההורים הם חצי מהדרך.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">תוכניות הדגל</span>
+      <h2>התוכניות המובילות שלנו</h2>
+    </div>
+    <div class="cards">
+      <a class="card lift" href="therapy.html">
+        <div class="thumb"><img src="images/remedial-teaching.jpg" alt="מפגש הוראה מתקנת"></div>
+        <h3>הוראה מתקנת בשיטת ניצן</h3>
+        <p class="body">מפגשים פרטניים שסוגרים פערים בקריאה, בכתיבה ובחשבון — בקצב של הילד.</p>
+        <span class="more">לפרטים</span>
+      </a>
+      <a class="card lift" href="parents.html">
+        <div class="thumb"><img src="images/parents-guidance.png" alt="ייעוץ, אימון והדרכת הורים"></div>
+        <h3>אימון והדרכת הורים</h3>
+        <p class="body">כלים מעשיים להורות רגועה יותר — בלי מלחמות על שיעורי בית.</p>
+        <span class="more">לפרטים</span>
+      </a>
+      <a class="card lift" href="about.html">
+        <div class="thumb"><img src="images/be-friendly-program.jpg" alt="תוכנית בי־פרינדלי בבתי ספר"></div>
+        <h3>בי־פרינדלי לבתי ספר</h3>
+        <p class="body">תוכנית ארצית שהופכת בתי ספר לסביבה ידידותית לתלמידים עם לקויות למידה.</p>
+        <span class="more">לפרטים</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">ילדים משתפים</span>
+      <h2>ילדים מספרים: איך זה לחיות עם הפרעת קשב</h2>
+    </div>
+    <div class="split">
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/VeKZxgT_65Y" title="ילדים מספרים: איך זה לחיות עם הפרעת קשב — אגודת ניצן" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="quotes stack">
+        <div class="quote">
+          <p>פעם חשבתי שאני טיפש. היום אני יודע שאני פשוט לומד אחרת — ומצליח.</p>
+          <span>יובל, כיתה ו׳</span>
+        </div>
+        <div class="quote">
+          <p>המורה מניצן לימדה אותי טריקים לזכור דברים. פתאום מבחנים זה לא סוף העולם.</p>
+          <span>נועה, כיתה ח׳</span>
+        </div>
+        <div class="quote">
+          <p>בזכות הקבוצה בניצן מצאתי חברים שמבינים אותי בדיוק.</p>
+          <span>איתי, כיתה ה׳</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">כדאי לקרוא</span>
+      <h2>מאמרים חדשים</h2>
+    </div>
+    <div class="cards">
+      <a class="card lift" href="parents.html#articles">
+        <div class="thumb"><img src="images/homework.jpg" alt="הורה וילד מכינים שיעורי בית"></div>
+        <h3>של מי האחריות על שיעורי הבית?</h3>
+        <p class="body">איך יוצאים ממאבקי הכוח ומחזירים לילד את הבעלות על הלמידה.</p>
+      </a>
+      <a class="card lift" href="parents.html#articles">
+        <div class="thumb"><img src="images/adhd.jpg" alt="ילד עם הפרעת קשב"></div>
+        <h3>הצד החיובי של ADHD</h3>
+        <p class="body">יצירתיות, אנרגיה וחשיבה מחוץ לקופסה — החוזקות שמאחורי הפרעת הקשב.</p>
+      </a>
+      <a class="card lift" href="parents.html#articles">
+        <div class="thumb"><img src="images/learning-disabilities.jpg" alt="ילדה לומדת עם מורה"></div>
+        <h3>מהי לקות למידה?</h3>
+        <p class="body">המדריך המלא להורים: סוגי הלקויות, הסימנים הראשונים ומה עושים הלאה.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section pad-bottom">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">קרובים אליכם</span>
+      <h2>סניפי ניצן בכל הארץ</h2>
+      <p>בחרו אזור ומצאו את הסניף הקרוב לביתכם.</p>
+    </div>
+    <div class="regions">
+      <div class="region">
+        <h3><span class="dot"></span>צפון</h3>
+        <div class="chips">
+          <a class="chip" href="branches.html">חיפה</a><a class="chip" href="branches.html">קריות</a><a class="chip" href="branches.html">נהריה</a><a class="chip" href="branches.html">עפולה</a><a class="chip" href="branches.html">טבריה</a><a class="chip" href="branches.html">בית שאן</a><a class="chip" href="branches.html">נוף הגליל</a><a class="chip" href="branches.html">מגדל העמק</a><a class="chip" href="branches.html">משגב</a>
+        </div>
+      </div>
+      <div class="region">
+        <h3><span class="dot"></span>מרכז</h3>
+        <div class="chips">
+          <a class="chip" href="branches.html">תל אביב</a><a class="chip" href="branches.html">רמת גן</a><a class="chip" href="branches.html">פתח תקווה</a><a class="chip" href="branches.html">נתניה</a><a class="chip" href="branches.html">הרצליה</a><a class="chip" href="branches.html">מודיעין</a><a class="chip" href="branches.html">רחובות</a><a class="chip" href="branches.html">נס ציונה</a><a class="chip" href="branches.html">יהוד</a><a class="chip" href="branches.html">חדרה</a>
+        </div>
+      </div>
+      <div class="region">
+        <h3><span class="dot"></span>דרום</h3>
+        <div class="chips">
+          <a class="chip" href="branches.html">באר שבע</a><a class="chip" href="branches.html">אשדוד</a><a class="chip" href="branches.html">אשקלון</a><a class="chip" href="branches.html">אופקים</a><a class="chip" href="branches.html">עומר</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <div class="cta-box">
+      <div>
+        <h2>לא בטוחים מאיפה מתחילים?</h2>
+        <p>קבעו פגישת ייעוץ ראשונה בזום — בחינם וללא התחייבות. נקשיב, נכוון, ונבנה יחד את הצעד הבא. ואם אתם רוצים לעזור לילד אחר לפרוח — כל תרומה מצמיחה עוד ניצן.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn btn-light" href="contact.html">לקביעת ייעוץ חינם</a>
+        <a class="btn btn-accent" href="donate.html">אני רוצה לתרום</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="images/logo-blue.svg" alt="אגודת ניצן ישראל">
+        <h4>אגודת ניצן ישראל</h4>
+        <p style="margin:0;">מאז 1964 — הארגון המוביל בארץ לאבחון, טיפול וליווי של ילדים ובוגרים עם לקויות למידה והפרעות קשב.</p>
+        <p style="margin:12px 0 0;"><b style="color:var(--brand);" dir="ltr">*2391</b> · שיחת חינם מכל טלפון</p>
+        <div class="socials">
+          <a href="https://www.youtube.com/@agudatnitzan" target="_blank" rel="noopener" aria-label="יוטיוב"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12s0-3.3-.4-4.8a2.5 2.5 0 0 0-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.4A2.5 2.5 0 0 0 1.4 7.2C1 8.7 1 12 1 12s0 3.3.4 4.8a2.5 2.5 0 0 0 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.4a2.5 2.5 0 0 0 1.8-1.8C23 15.3 23 12 23 12zM9.8 15.2V8.8L15.7 12z"/></svg></a>
+          <a href="https://www.facebook.com/nitzancenter" target="_blank" rel="noopener" aria-label="פייסבוק"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.4 21v-8.2h2.7l.4-3.1h-3.1V7.7c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4v3.1h2.7V21z"/></svg></a>
+          <a href="https://www.instagram.com/agudat_nitzan" target="_blank" rel="noopener" aria-label="אינסטגרם"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3"/></svg></a>
+          <a href="https://www.linkedin.com/company/nitzan" target="_blank" rel="noopener" aria-label="לינקדאין"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 8.6H3.2V21h3.2zM4.8 3.2a1.9 1.9 0 1 0 1.9 1.9 1.9 1.9 0 0 0-1.9-1.9zM21 13.4c0-3.4-1.8-5-4.2-5a3.7 3.7 0 0 0-3.3 1.6V8.6h-3.2V21h3.2v-6.5c0-1.7.8-2.7 2.2-2.7s2.1 1 2.1 2.7V21H21z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>שירותים</h4>
+        <ul>
+          <li><a href="diagnostics.html">אבחונים</a></li>
+          <li><a href="therapy.html">הוראה מתקנת</a></li>
+          <li><a href="therapy.html">טיפולים ותרפיות</a></li>
+          <li><a href="parents.html">אימון הורים</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>מידע</h4>
+        <ul>
+          <li><a href="parents.html#articles">מהי לקות למידה?</a></li>
+          <li><a href="parents.html#articles">הפרעת קשב ADHD</a></li>
+          <li><a href="parents.html#articles">מאמרים להורים</a></li>
+          <li><a href="diagnostics.html#faq">שאלות נפוצות</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>הארגון</h4>
+        <ul>
+          <li><a href="about.html">אודות ניצן</a></li>
+          <li><a href="branches.html">סניפים</a></li>
+          <li><a href="donate.html">תרומות</a></li>
+          <li><a href="contact.html">יצירת קשר</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span dir="ltr">1964–2026</span> כל הזכויות שמורות לאגודת ניצן ישראל</span>
+      <span><a href="accessibility.html">נגישות</a> · <a href="terms.html">תנאי שימוש</a> · <a href="privacy.html">פרטיות</a></span>
+      <a class="credit" href="https://ombee.co.il" target="_blank" rel="noopener">עיצוב ובנייה ע״י: <img src="images/ombee-logo.png" alt="OMBee — Graphic Design And UI/UX"></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
